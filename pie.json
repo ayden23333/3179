@@ -1,0 +1,15 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Pie Chart with percentage_tooltip",
+    "width": 360,
+    "height": 280,
+    "data": {
+        "url": "https://raw.githubusercontent.com/ayden23333/3179/main/_sold.csv"
+    }, 
+    "mark": {"type": "arc", "tooltip": true,"innerRadius":80},
+    "encoding": {
+      "theta": {"aggregate": "count", "field": "propertyType", "type": "ordinal", "stack": "center"},
+      "color": {"field": "propertyType", "type": "nominal"}
+    }
+   
+  }

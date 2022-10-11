@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body >
     <header id="front">
         <div>
             <h2>Victroia Realestate Selling situation
@@ -22,11 +22,12 @@
         </div>
 
     </header>
-    <section id="Describle1">
-        <h1>Introduction</h1>
-        <p>The housing industry in Victoria is booming as the population explodes and as society grows, this is when the type of house and the economy that it sells and brings in receives even more widespread attention. This data visualization will show us how Realestate, a Victorian software, sells properties and help us understand more about the Victorian housing industry.</p>
-       </section>
-    <div id="symbol_map", style = "float: left; margin-top: 50px; margin-left: 20px;" >
+       
+       
+       <div>
+        <h1 style="font-family:'Times New Roman'; font-size: 30px; margin-top: 15px;color: #173e57;margin-left: 100px;">Overview Map</h1>
+       </div>
+    <div id="symbol_map", style = " margin-top: 20px; margin-left: 120px;" >
     </div>
     <script type="text/javascript">
         var spec2 = "symbol_map.vg.json";
@@ -34,53 +35,58 @@
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
       </script>
-      
-      <div >
-        <p> </p>
-       <p style = "font-size: 20px; text-align: center; padding-top: 180px;padding-right: 20px; background-color: #ebf2e5; padding-bottom: 120px; margin-top: 20px;  font-family:'Times New Roman', Times, serif;  color:#215a7e;">
-        As we can see from the map on the left, the closer to the centre of Melbourne's CBD, 
+      <h1 style="font-size: 26px; margin-left: 100px; font-family:'Times New Roman', Times, serif;  color:#215a7e; margin-top: 30px;">
+        Introduction:
+       </h1>
+      <div style=" column-count: 2;margin-top: 10px;">
+        <p style="font-size: 22px; margin-left: 100px; font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+          The housing industry in Victoria is booming as the population explodes and as society grows, 
+          this is when the type of house and the economy that it sells and brings in receives even more
+           widespread attention. This data visualization will show us how Realestate, a Victorian software, 
+           sells properties and help us understand more about the Victorian housing industry.  As we can see from the map on the left, 
+           it closer to the centre of Melbourne's CBD, 
+        </p>
+        <p style="font-size: 22px;  margin-right: 150px;font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+    
         the more concentrated and numerous the flats are, as the CBD area is generally too large and small 
         to sustain a large number of houses. As the CBD area is generally too large and narrow to sustain a 
         large number of houses, the scattered suburbs are generally a little more house-like, while 
         the majority of acres are in the more remote suburbs because they occupy a larger area and 
         require more exclusive conditions.
-
+        </p>
         
-    </p>
+      </div>
+     
       </div>
 
-   
+      <div>
+        <h1 style="font-family:'Times New Roman'; font-size: 30px; margin-top: 30px;color: #173e57;;margin-left: 100px;">Compare selling type</h1>
+       </div>
 
+<div id="pie_chart" style = "float: left; margin-top: 50px; margin-left: 120px;">
 
+</div>
+<p style = "font-size: 22px;  padding-top: 70px;padding-right: 150px; padding-bottom: 70px; margin-top: 20px;  font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+  We can see from the icons that the house is the most sold, the apartment is the second most sold and
+   the other parts are relatively less sold, especially the villa, lifestyle, apartment and land,
+    as these types of houses are more unique and less demanded, but on the contrary the map shows 
+    that the house is the most sold than the apartment, and in fact there is not much difference 
+    between the two sales, which means that there is a lot of overlap in the data of the CBD area
 
-
-
-
-
-
-
-<div id="bar_chart"style = "float: left; margin-top: 50px; margin-left: 20px;">
-    </div>
-    <script type="text/javascript">
-        var spec2 = "test.json";
-        vegaEmbed('#bar_chart', spec2).then(function(result) {
-          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-        }).catch(console.error);
-      </script>
-
-<div >
-    <p> </p>
-   <p style = "font-size: 20px; text-align: center; padding-top: 180px;padding-right: 20px; background-color: #ebf2e5; padding-bottom: 120px; margin-top: 20px;  font-family:'Times New Roman', Times, serif;  color:#215a7e;">
-    We can see from the icons that the house is the most sold, the apartment is the second most sold and
-     the other parts are relatively less sold, especially the villa, lifestyle, apartment and land,
-      as these types of houses are more unique and less demanded, but on the contrary the map shows 
-      that the house is the most sold than the apartment, and in fact there is not much difference 
-      between the two sales, which means that there is a lot of overlap in the data of the CBD area
-
-    
+  
 </p>
-  </div>
-<div id="bubble_chart"style = "float: left; margin-top: 50px; margin-left: 20px;">
+<script type="text/javascript">
+    var spec2 = "pie.json";
+    vegaEmbed('#pie_chart', spec2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
+
+
+<div>
+  <h1 style="font-family:'Times New Roman'; font-size: 30px; margin-top: 15px;color: #173e57;;margin-left: 100px; margin-bottom: 20px;">Relationship between bedroom number and price</h1>
+ </div>
+<div id="bubble_chart"style =" margin-top: 20px; margin-left: 90px;" >
 </div>
 <script type="text/javascript">
     var spec2 = "interactive.json";
@@ -88,9 +94,39 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
-   
+   <div style=" column-count: 2;margin-top: 10px;">
+    <p style="font-size: 22px; margin-left: 100px; font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+      From this chart, we can see that the relationship between the number of rooms and the price of a 
+      house does not show a positive ratio. Most of the rooms are priced at 400,000 to two million, 
+      but there are seven to eight rooms that generally do not cost less than 5,800,000 to 600,000. 
+      base on this observersion
+    </p>
+    <p style="font-size: 22px;  margin-right: 150px;font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+      price of a house with a large number of rooms is generally not low. In the case of a house,
+      for example, 3-4 rooms are generally in the range of four hundred thousand to two million. 
+      But the price is also related to many factors, such as location, parking space, etc.
+    </p>
     
-
+  </div>
+  <div>
+    <h1 style="font-family:'Times New Roman'; font-size: 30px; margin-top: 25px;color: #173e57;;margin-left: 100px; margin-bottom: 10px;">Most popular area</h1>
+   </div>
+  
+<div id="bar_chart" style = "float: left; margin-top: 50px; margin-left: 120px;" >
+</div>
+<p style = "font-size: 22px;  padding-top: 130px;padding-right: 150px; padding-bottom: 70px; margin-top: 20px; padding-left: 647px; font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+  The table on the left shows the most popular sales areas, which are widely distributed and not in the same area, 
+  probably due to good educational choices, cheap prices or more convenient transportation, etc
+   The choice of popular areas does not depend on the flow of people or whether they have popular attractions, 
+   but rather on whether people's convenience is met.
+  
+</p>
+<script type="text/javascript">
+    var spec2 = "line.json";
+    vegaEmbed('#bar_chart', spec2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
 
 </body>
 

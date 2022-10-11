@@ -1,0 +1,29 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 400,
+    "height": 350,
+    "data": {"url": "https://raw.githubusercontent.com/ayden23333/3179/main/_sold.csv"},
+    "transform": [{
+      "filter": {"field": "postcode","oneOf":[3006,3012,3082,3136,3215,3216,3818,3820]}
+    }],
+    "mark": {"type": "bar",
+    "clip": true,
+    "tooltip":true
+  },
+    
+    "encoding": {
+      "x": {"field": "postcode", "type": "ordinal"},
+      
+      "y": {"field": "postcode", "type": "ordinal","aggregate":"count",
+      "scale":{"domain":[5200,5225]}
+      
+    },
+    "tooltip": [
+      {
+      "field": "postcode", "type": "quantitative"},
+      {"field":"suburb","type": "ordinal"},
+      {"field":"postcode","type": "quantitative","aggregate":"count","title":"Amount count"}
+    ]
+  
+    }
+  }
