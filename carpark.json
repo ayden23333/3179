@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/ayden23333/3179/main/_sold.csv"
+    },
+    "hconcat": [
+        {
+          "mark": "circle",
+          "encoding": {
+            "y": {
+              "field": "parkingSpaces",
+              "type": "ordinal",
+              "sort":"y"
+            },
+            "color": {
+              "field": "price",
+              "type": "quantitative",
+              "scale":{"range":["lightblue","green"]}
+            }
+          }
+        },
+        {
+            "mark": "circle",
+            "encoding": {
+              "y": {
+                "field": "bathrooms",
+                "type": "ordinal",
+                "sort": null
+              },
+              "color": {
+                "field": "price",
+                "type": "quantitative",
+                "scale":{"range":["lightblue","green"]}
+              
+              }
+            }
+          }
+    ]
+    }

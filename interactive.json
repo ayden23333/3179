@@ -17,14 +17,18 @@
         "field": "bedrooms",
         "type": "nominal",
         "title": "bedroom number"
-  }, "x": {
+  }, 
+
+  "x": {
       
         "field": "price",
         "type": "quantitative"    
         },
       "color": {
         "field": "propertyType",
-        "type": "nominal"},
+        "type": "nominal",
+        "scale":{"range":["royalblue","green","PaleGreen","YellowGreen","orange","LightBlue","DodgerBlue","Navy","gold"]}
+      },
         "opacity": {
           "condition": {"selection": "propertyType_highlight", "value": 1.0},
           "value": 0.0},

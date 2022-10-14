@@ -13,11 +13,16 @@
     
     "encoding": {
       "x": {"field": "postcode", "type": "ordinal"},
+      "color": {
+        "field":"postcode",
+        "scale":{"range":["RoyalBlue","green","PaleGreen","YellowGreen","CornflowerBlue","LightBlue","DodgerBlue","Navy"]}
       
+      },
       "y": {"field": "postcode", "type": "ordinal","aggregate":"count",
       "scale":{"domain":[5200,5225]}
       
     },
+
     "tooltip": [
       {
       "field": "postcode", "type": "quantitative"},

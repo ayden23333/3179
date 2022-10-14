@@ -8,8 +8,10 @@
     }, 
     "mark": {"type": "arc", "tooltip": true,"innerRadius":80},
     "encoding": {
-      "theta": {"aggregate": "count", "field": "propertyType", "type": "ordinal", "stack": "center"},
-      "color": {"field": "propertyType", "type": "nominal"}
+      "theta": { "field": "num", "type": "quantitative", "stack": "center","title":"total amount"},
+      "color": {"field": "type", "type": "ordinal",
+      "scale":{"range":["blue","green","PaleGreen","YellowGreen","orange","LightBlue","DodgerBlue","Navy","gold"]}}
+      
     }
    
   }

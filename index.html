@@ -35,18 +35,21 @@
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
       </script>
-      <h1 style="font-size: 26px; margin-left: 100px; font-family:'Times New Roman', Times, serif;  color:#215a7e; margin-top: 30px;">
-        Introduction:
-       </h1>
+      <div>
+        <h1 style="font-size: 30px; margin-left: 100px; font-family:'Times New Roman', Times, serif;  color:#215a7e; margin-top: 30px;">
+          Introduction
+         </h1>
+      </div>
+      
       <div style=" column-count: 2;margin-top: 10px;">
-        <p style="font-size: 22px; margin-left: 100px; font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+        <p style="font-size: 24px; margin-left: 100px; font-family:'Times New Roman', Times, serif;  color:#215a7e;">
           The housing industry in Victoria is booming as the population explodes and as society grows, 
           this is when the type of house and the economy that it sells and brings in receives even more
            widespread attention. This data visualization will show us how Realestate, a Victorian software, 
            sells properties and help us understand more about the Victorian housing industry.  As we can see from the map on the left, 
            it closer to the centre of Melbourne's CBD, 
         </p>
-        <p style="font-size: 22px;  margin-right: 150px;font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+        <p style="font-size: 24px;  margin-right: 150px;font-family:'Times New Roman', Times, serif;  color:#215a7e;">
     
         the more concentrated and numerous the flats are, as the CBD area is generally too large and small 
         to sustain a large number of houses. As the CBD area is generally too large and narrow to sustain a 
@@ -60,18 +63,20 @@
       </div>
 
       <div>
-        <h1 style="font-family:'Times New Roman'; font-size: 30px; margin-top: 30px;color: #173e57;;margin-left: 100px;">Compare selling type</h1>
+        <h1 style="font-family:'Times New Roman'; font-size: 30px; margin-top: 30px;color: #173e57;;margin-left: 100px;">Most popular types</h1>
        </div>
 
 <div id="pie_chart" style = "float: left; margin-top: 50px; margin-left: 120px;">
 
 </div>
-<p style = "font-size: 22px;  padding-top: 70px;padding-right: 150px; padding-bottom: 70px; margin-top: 20px;  font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+<p style = "font-size: 24px; margin-left: 650px; padding-top: 10px;padding-right: 150px; padding-bottom: 70px; margin-top: 20px;  font-family:'Times New Roman', Times, serif;  color:#215a7e;">
   We can see from the icons that the house is the most sold, the apartment is the second most sold and
    the other parts are relatively less sold, especially the villa, lifestyle, apartment and land,
     as these types of houses are more unique and less demanded, but on the contrary the map shows 
     that the house is the most sold than the apartment, and in fact there is not much difference 
-    between the two sales, which means that there is a lot of overlap in the data of the CBD area
+    between the two sales, which means that there is a lot of overlap in the data of the CBD area，
+    It is also clear that people coming to Australia have different property needs, but the wide range of Australian regions can cater for a 
+    diverse range of properties for sale.
 
   
 </p>
@@ -95,30 +100,55 @@
     }).catch(console.error);
   </script>
    <div style=" column-count: 2;margin-top: 10px;">
-    <p style="font-size: 22px; margin-left: 100px; font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+    <p style="font-size: 24px; margin-left: 100px; font-family:'Times New Roman', Times, serif;  color:#215a7e;">
       From this chart, we can see that the relationship between the number of rooms and the price of a 
       house does not show a positive ratio. Most of the rooms are priced at 400,000 to two million, 
       but there are seven to eight rooms that generally do not cost less than 5,800,000 to 600,000. 
       base on this observersion
     </p>
-    <p style="font-size: 22px;  margin-right: 150px;font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+    <p style="font-size: 24px;  margin-right: 150px;font-family:'Times New Roman', Times, serif;  color:#215a7e;">
       price of a house with a large number of rooms is generally not low. In the case of a house,
       for example, 3-4 rooms are generally in the range of four hundred thousand to two million. 
       But the price is also related to many factors, such as location, parking space, etc.
     </p>
-    
+  
   </div>
   <div>
-    <h1 style="font-family:'Times New Roman'; font-size: 30px; margin-top: 25px;color: #173e57;;margin-left: 100px; margin-bottom: 10px;">Most popular area</h1>
+    <h1 style="font-family:'Times New Roman'; font-size: 30px; margin-top: 40px;color: #173e57;;margin-left: 100px; margin-bottom: 20px;">Other comparision</h1>
+   </div>
+
+  <div id="car_chart" style="float: left; margin-top: 50px; margin-left: 200px;">
+  </div>
+  <p style = "font-size: 24px; margin-left: 650px; padding-top: 40px;padding-right: 150px; padding-bottom: 70px; margin-top: 20px;  font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+    From these two comparative charts, the number of parking spaces and toilets still has a very limited impact on the price of housing, but it still has some impact, so the price of housing depends on several aspects and cannot be judged from a single aspect. For example, it depends on the location, convenience, etc. Also, the abundance of parking spaces and toilets shows the richness and diversity of Victoria's real estate resources to meet the needs of many people.
+  
+    
+  </p>
+
+  <script type="text/javascript">
+    var spec2 = "carpark.json";
+    vegaEmbed('#car_chart', spec2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
+
+
+  <div>
+    <h1 style="font-family:'Times New Roman'; font-size: 30px; margin-top: 15px;color: #173e57;;margin-left: 100px; margin-bottom: 5px;">Most popular area</h1>
    </div>
   
-<div id="bar_chart" style = "float: left; margin-top: 50px; margin-left: 120px;" >
+
+
+
+<div id="bar_chart" style = "float: left; margin-top: 20px; margin-left: 80px;" >
 </div>
-<p style = "font-size: 22px;  padding-top: 130px;padding-right: 150px; padding-bottom: 70px; margin-top: 20px; padding-left: 647px; font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+<p style = "font-size: 24px;  padding-top: 30px;padding-right: 150px; padding-bottom: 40px; margin-top: 20px; padding-left: 640px; font-family:'Times New Roman', Times, serif;  color:#215a7e;">
   The table on the left shows the most popular sales areas, which are widely distributed and not in the same area, 
   probably due to good educational choices, cheap prices or more convenient transportation, etc
    The choice of popular areas does not depend on the flow of people or whether they have popular attractions, 
-   but rather on whether people's convenience is met.
+   but rather on whether people's convenience is met.However, the fact that the number of sales reached a staggering
+    5,000 in just one week shows how tight and popular Australian property resources are for sale, and the scarcity of properties
+    can be reflected in this regard.
   
 </p>
 <script type="text/javascript">
@@ -127,7 +157,38 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
+  
+  
+  
+  
+  
+<div>
+<h1 style="font-family:'Times New Roman'; font-size: 30px; margin-top: 40px;color: #173e57;;margin-left: 100px; margin-bottom: 35px;">Best selling day</h1>
+</div>
+  
 
+
+
+<div id="sale_chart" style = "float: left; margin-top: 20px; margin-left: 120px;" >
+</div>
+<p style = "font-size: 24px;  padding-top: 60px;padding-right: 150px; padding-bottom: 40px; margin-top: 20px; padding-left: 640px; font-family:'Times New Roman', Times, serif;  color:#215a7e;">
+  According to the comprehensive data, the best selling day is November 1, probably because it is the beginning of the month, 
+  signifying a new beginning. But it is easy to see from the high consumption of these days how
+   hot Victorian real estate sales are, with almost every day having extremely high sales. 
+   The abundance and variety of properties available is testament to the promising future of property
+    sales in Victoria. Including the fact that Melbourne has been voted the most livable city for many years, 
+    the influx of people has made Melbourne real estate even more promising 
+</p>
+<script type="text/javascript">
+    var spec2 = "sales.json";
+    vegaEmbed('#sale_chart', spec2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
+<p style = "font-size: 24px;  padding-top: 60px;padding-right: 30px; padding-bottom: 40px; margin-top: 20px; padding-left: 800px; font-family:'Times New Roman', Times, serif;  color:#53abe2;">
+-FIT3179 Houxuan Zhou Assignment2
+ 
+</p>
 </body>
 
 </html>

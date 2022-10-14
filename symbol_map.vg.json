@@ -50,8 +50,20 @@
             "field": "propertyType",
             "type": "nominal",
             "title": "Property type",
-            "scale": {"scheme": "category20"}
-          }
+            "scale":{"range":["royalblue","green","PaleGreen","YellowGreen","orange","LightBlue","DodgerBlue","Navy","gold"]}
+          },
+          "tooltip": [
+            {"field": "postcode", "type": "quantitative"},
+            {"field": "bathrooms", "type": "quantitative", "format": ","},
+            {"field": "bedrooms", "type": "quantitative", "format": ","},
+            {"field": "parkingSpaces", "type": "quantitative", "format": ",","title":"parking space"},
+            {"field": "suburb", "type": "nominal"},
+            {"field": "streetAddress", "type": "nominal","title":"stress address"},
+            {"field":"title","type":"ordinal"}
+
+    
+            
+       ]
           
           
         }
