@@ -27,6 +27,7 @@
       "color": {
         "field": "propertyType",
         "type": "nominal",
+        "title": "property type",
         "scale":{"range":["royalblue","green","PaleGreen","YellowGreen","orange","LightBlue","DodgerBlue","Navy","gold"]}
       },
         "opacity": {
